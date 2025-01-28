@@ -1,0 +1,17 @@
+{
+  "name": "backendproject",
+  "version": "1.0.0",
+  "description": "starting of backend series",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "backend",
+    "express",
+    "mongoose"
+  ],
+  "author": "Ayush Kumar Chauhan",
+  "license": "ISC"
+}
