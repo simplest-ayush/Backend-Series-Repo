@@ -1,12 +1,12 @@
 // using promises
 
-//this is a higher order function -> a function that can accept another function as parameter and can also return them 
+//asyncHandler is a higher order function -> a function that can accept another function as parameter and can also return them 
 const asyncHandler = (requestHandler) => {
-    (req, res, next)=>{
+    return (req, res, next) => {
         Promise.resolve(requestHandler(req, res, next)).
-        catch((err)=>{
-            next(err)
-        })
+            catch((err) => {
+                next(err)
+            })
     }
 }
 
